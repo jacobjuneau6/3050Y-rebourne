@@ -50,8 +50,8 @@
  * concurrently! The okapi namespace will export all symbols inside the pros
  * namespace.
  */
-// using namespace pros;
-// using namespace pros::literals;
+using namespace pros;
+using namespace pros::literals;
 // using namespace okapi;
 
 /**
@@ -79,3 +79,13 @@ void opcontrol(void);
 #endif
 
 #endif  // _PROS_MAIN_H_
+Imu imu(8);
+pros::Motor intake(9,pros::v5::MotorGears::blue);
+pros::Motor intake2(-21,pros::v5::MotorGears::blue);
+ez::Drive chassis(
+    {-2,-3,-4},
+    {11,12,13},
+    8,
+    3.25,
+    450);
+ez::tracking_wheel horiz_tracker(5, 2.75, 0);
