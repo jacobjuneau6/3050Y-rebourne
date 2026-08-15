@@ -80,12 +80,12 @@ void opcontrol(void);
 
 #endif  // _PROS_MAIN_H_
 Imu imu(8);
-pros::Motor intake(9,pros::v5::MotorGears::blue);
+pros::Motor intake(-9,pros::v5::MotorGears::blue);
 pros::Motor intake2(-21,pros::v5::MotorGears::blue);
 ez::Drive chassis(
-    {-2,-3,-4},
-    {11,12,13},
-    8,
+    {-5,-4},
+    {9,8},
+    1,
     3.25,
     450);
-ez::tracking_wheel horiz_tracker(5, 2.75, 0);
+//ez::tracking_wheel horiz_tracker(-19, 2.75, 0);

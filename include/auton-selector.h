@@ -11,7 +11,7 @@ static void btn_event_cb(lv_event_t * e)
     if(code == LV_EVENT_CLICKED) {
     lv_obj_t * label = lv_obj_get_child(btn, 0);
     lv_label_set_text_fmt(label, "Selected");
-	sel = 1;
+	sel = 3;
 	lv_obj_set_style_bg_color(btn, colorg, LV_PART_MAIN);
     lv_obj_add_state(btn3, LV_STATE_DISABLED);
     lv_obj_add_state(btn2, LV_STATE_DISABLED);
@@ -40,7 +40,7 @@ static void btn_event_cb3(lv_event_t * e)
 	lv_color_t colorg = lv_color_make(0, 255, 0);
     lv_obj_t * btn3 = lv_event_get_target(e);
     if(code3 == LV_EVENT_CLICKED) {
-	sel = 3;
+	sel = 4;
     lv_obj_t * label3 = lv_obj_get_child(btn3, 0);
     lv_label_set_text_fmt(label3, "Selected");
 	lv_obj_set_style_bg_color(btn3, colorg, LV_PART_MAIN);
