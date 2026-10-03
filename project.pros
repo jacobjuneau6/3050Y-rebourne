@@ -281,9 +281,14 @@
     },
     "upload_options": {
       "slot": 1,
+<<<<<<< HEAD
       "description": "new",
       "after": "screen",
       "icon": "X"
+=======
+      "description": "We have been rebourne and will rise.",
+      "after": "run"
+>>>>>>> 4b90f46 (setup test code)
     },
     "use_early_access": false
   }
