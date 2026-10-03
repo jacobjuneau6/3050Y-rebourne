@@ -80,21 +80,14 @@ void opcontrol(void);
 
 #endif  // _PROS_MAIN_H_
 Imu imu(8);
-<<<<<<< HEAD
-pros::Motor intake(-9,pros::v5::MotorGears::blue);
-pros::Motor intake2(-21,pros::v5::MotorGears::blue);
-=======
+
 pros::Motor intake1(9,pros::v5::MotorGears::blue);
 pros::Motor intake2(10,pros::v5::MotorGears::blue);
->>>>>>> 4b90f46 (setup test code)
+
 ez::Drive chassis(
     {-5,-4},
     {9,8},
     1,
     3.25,
     450);
-<<<<<<< HEAD
-//ez::tracking_wheel horiz_tracker(-19, 2.75, 0);
-=======
 ez::tracking_wheel horiz_tracker(-19, 2.75, 0);
->>>>>>> 4b90f46 (setup test code)
